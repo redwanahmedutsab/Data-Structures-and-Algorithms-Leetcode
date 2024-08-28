@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+class Solution {
+public:
+    int max_sub_array_sum(vector<int> arr, int n) {
+        int max_sum = INT_MIN, current_sum = 0;
+        for (int i = 0; i < n; i++) {
+            current_sum += arr[i];
+            max_sum = max(current_sum, max_sum);
+            if (current_sum < 0) current_sum = 0;
+        }
+        return max_sum;
+    }
+};
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    Solution *s = new Solution();
+    cout << s->max_sub_array_sum(arr, n);
+}

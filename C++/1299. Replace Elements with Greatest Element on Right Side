@@ -1,0 +1,12 @@
+class Solution {
+public:
+    vector<int> replaceElements(vector<int>& arr) {
+        int n = arr.size(), max_value = -1, curr_max;
+        for (int i = n - 1; i >= 0; i--) {
+            curr_max = arr[i];
+            arr[i] = max_value;
+            max_value = max(max_value, curr_max);
+        }
+        return arr;
+    }
+};

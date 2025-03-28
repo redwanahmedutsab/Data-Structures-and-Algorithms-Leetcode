@@ -1,0 +1,24 @@
+class Solution {
+    public int numUniqueEmails(String[] emails) {
+        Set<String> sl = new HashSet<>();
+        for (var e : emails) {
+            String s = "";
+            int i = 0;
+            while (i < e.length() && e.charAt(i) != '@') {
+                if (e.charAt(i) == '+') {
+                    while (i < e.length() && e.charAt(i) != '@')
+                        i++;
+                    i--;
+                } else if (e.charAt(i) != '.') {
+                    s += e.charAt(i);
+                }
+                i++;
+            }
+            s += e.substring(i);
+
+            sl.add(s);
+        }
+
+        return sl.size();
+    }
+}

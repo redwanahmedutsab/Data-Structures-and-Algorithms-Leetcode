@@ -1,0 +1,9 @@
+class Solution {
+    public int countSeniors(String[] details) {
+        int n = details.length, count = 0;
+        for (var i : details)
+            if (Integer.parseInt(i.substring(11, 13)) > 60)
+                count++;
+        return count;
+    }
+}

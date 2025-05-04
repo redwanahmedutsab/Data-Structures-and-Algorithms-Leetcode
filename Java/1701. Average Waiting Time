@@ -1,0 +1,12 @@
+class Solution {
+    public double averageWaitingTime(int[][] customers) {
+        long current_time = 0, total_wait_time = 0;
+        for (var customer : customers) {
+            long arrival = customer[0], time = customer[1];
+            current_time = Math.max(current_time, arrival) + time;
+            total_wait_time += current_time - arrival;
+        }
+
+        return Double.valueOf(total_wait_time) / customers.length;
+    }
+}

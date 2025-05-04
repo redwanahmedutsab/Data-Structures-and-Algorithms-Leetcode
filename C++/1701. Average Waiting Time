@@ -1,0 +1,14 @@
+class Solution {
+public:
+    double averageWaitingTime(vector<vector<int>>& customers) {
+        long long current_time = 0, total_wait_time = 0;
+
+        for (const auto& customer : customers) {
+            int arrival = customer[0], time = customer[1];
+            current_time = max(current_time, (long long)arrival) + time;
+            total_wait_time += current_time - arrival;
+        }
+
+        return (double)total_wait_time / customers.size();
+    }
+};

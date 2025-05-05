@@ -1,0 +1,16 @@
+class Solution {
+    public int[] sortArray(int[] nums) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        int n = nums.length;
+        int[] arr = new int[n];
+        for (int i : nums) {
+            pq.add(i);
+        }
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = pq.peek();
+            pq.poll();
+        }
+        return arr;
+    }
+}

@@ -4,10 +4,10 @@
 
 <div align="center">
 
-🧮 **Solving the LeetCode universe, one problem at a time!**
-👨‍💻 Dual solutions in **Java** & **C++**
-📚 A comprehensive guide to mastering **Data Structures** & **Algorithms**
-⭐ Let's learn, grow, and get better together!
+* 🧮 **Solving the LeetCode universe, one problem at a time!**
+* 👨‍💻 Dual solutions in **Java** & **C++**
+* 📚 A comprehensive guide to mastering **Data Structures** & **Algorithms**
+* ⭐ Let's learn, grow, and get better together!
 
 </div>
 
@@ -15,10 +15,10 @@
 
 ## 📂 What's Inside?
 
-🎯 **Organized by Topic** — Explore solutions categorized by problem type
-💻 **Dual-Language Solutions** — Every problem has both **Java** & **C++** implementations
-🚀 **Optimized Approaches** — Clean, efficient, and scalable solutions
-📈 **Regularly Updated** — More problems, more patterns, more fun!
+* 🎯 **Organized by Topic** — Explore solutions categorized by problem type
+* 💻 **Dual-Language Solutions** — Every problem has both **Java** & **C++** implementations
+* 🚀 **Optimized Approaches** — Clean, efficient, and scalable solutions
+* 📈 **Regularly Updated** — More problems, more patterns, more fun!
 
 ---
 

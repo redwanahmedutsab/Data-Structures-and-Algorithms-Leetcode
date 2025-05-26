@@ -2,7 +2,7 @@
 
 # 🚀 Data Structures & Algorithms — LeetCode Solutions
 
-<div align="center">
+<div align="left">
 
 * 🧮 **Solving the LeetCode universe, one problem at a time!**
 * 👨‍💻 Dual solutions in **Java** & **C++**

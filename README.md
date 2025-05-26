@@ -46,7 +46,7 @@ This repository covers a wide range of **coding interview topics** and **problem
 
 ---
 
-## 💻 Languages Useda
+## 💻 Languages & Platform Used
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=java,cpp,leetcode,git" alt="Skill Icons" />

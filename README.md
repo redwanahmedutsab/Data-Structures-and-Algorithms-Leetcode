@@ -13,12 +13,16 @@
 
 ---
 
+<div align="left">
+
 ## 📂 What's Inside?
 
 * 🎯 **Organized by Topic** — Explore solutions categorized by problem type
 * 💻 **Dual-Language Solutions** — Every problem has both **Java** & **C++** implementations
 * 🚀 **Optimized Approaches** — Clean, efficient, and scalable solutions
 * 📈 **Regularly Updated** — More problems, more patterns, more fun!
+
+</div>
 
 ---
 

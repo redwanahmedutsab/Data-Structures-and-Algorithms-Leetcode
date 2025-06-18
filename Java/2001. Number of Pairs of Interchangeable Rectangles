@@ -1,0 +1,15 @@
+class Solution {
+    public long interchangeableRectangles(int[][] rectangles) {
+        HashMap<Double, Long> ratioCount = new HashMap<>();
+        long pairs = 0;
+
+        for (int[] rect : rectangles) {
+            double ratio = (double) rect[0] / rect[1];
+            long count = ratioCount.getOrDefault(ratio, 0L);
+            pairs += count;
+            ratioCount.put(ratio, count + 1);
+        }
+
+        return pairs;
+    }
+}

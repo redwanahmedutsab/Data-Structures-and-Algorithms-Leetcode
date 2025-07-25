@@ -1,0 +1,25 @@
+class Solution {
+    public int compress(char[] chars) {
+        int n = chars.length;
+        int j = 0;
+        int count = 1;
+
+        for (int i = 1; i <= n; i++) {
+            if (i < n && chars[i] == chars[i - 1]) {
+                count++;
+            } else {
+                chars[j++] = chars[i - 1];
+                if (count > 1) {
+                    String cnt = String.valueOf(count);
+                    for (char c : cnt.toCharArray()) {
+                        chars[j++] = c;
+                    }
+                }
+                count = 1;
+            }
+        }
+
+        return j;
+
+    }
+}

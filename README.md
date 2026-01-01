@@ -5,7 +5,7 @@
 <div align="left">
 
 * 🧮 **Solving the LeetCode universe, one problem at a time!**
-* 👨‍💻 Dual solutions in **Java** & **C++**
+* 👨‍💻 Tripple solutions in **Python**, **Java** & **C++**
 * 📚 A comprehensive guide to mastering **Data Structures** & **Algorithms**
 * ⭐ Let's learn, grow, and get better together!
 

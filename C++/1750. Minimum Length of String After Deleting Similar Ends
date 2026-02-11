@@ -1,0 +1,17 @@
+class Solution {
+public:
+    int minimumLength(string s) {
+        int i = 0, j = s.size()-1, count = 0;
+        while(i < j) {
+            if(s[i] == s[j]) {
+                count += 2;
+                char c = s[i];
+                while(i + 1 < j && s[i + 1] == c)i++, count++;
+                while(i + 1 < j && s[j - 1] == c)j--, count++;
+            } else break;
+            i++;
+            j--;
+        }
+        return (s.size())-count;
+    }
+};

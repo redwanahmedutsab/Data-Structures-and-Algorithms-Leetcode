@@ -1,0 +1,17 @@
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        answers = []
+        values = {}
+        
+        for word in strs:
+            temp = word
+            word = "".join(sorted(word))
+            
+            if word not in values:
+                values[word] = []
+                
+            values[word].append(temp)
+            
+        answers = list(values.values())
+        
+        return answers

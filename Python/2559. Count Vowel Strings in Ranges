@@ -1,0 +1,24 @@
+class Solution:
+    def isVowel(self, s: str) -> bool:
+        return s in {"a", "e", "i", "o", "u"}
+
+    def vowelStrings(self, words: List[str], queries: List[List[int]]) -> List[int]:
+        answers = []
+        count_freq = []
+        count = 0
+        for word in words:
+            if self.isVowel(word[0]) and self.isVowel(word[len(word) - 1]):
+                count += 1
+
+            count_freq.append(count)
+
+        for i in queries:
+            lst = count_freq[i[1]]
+            if i[0] == 0:
+                fst = 0
+            else:
+                fst = count_freq[i[0] - 1]
+
+            answers.append(lst - fst)
+
+        return answers

@@ -1,0 +1,16 @@
+class Solution:
+    def customSortString(self, order: str, s: str) -> str:
+        from collections import Counter
+        
+        char_count = Counter(s)
+        result = []
+
+        for ch in order:
+            if ch in char_count:
+                result.append(ch * char_count[ch])
+                del char_count[ch]
+
+        for ch, count in char_count.items():
+            result.append(ch * count)
+
+        return "".join(result)

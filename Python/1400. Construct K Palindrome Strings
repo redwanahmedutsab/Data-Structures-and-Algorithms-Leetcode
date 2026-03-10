@@ -1,0 +1,19 @@
+class Solution:
+    def canConstruct(self, s: str, k: int) -> bool:
+        n = len(s)
+        freq = [0] * 26
+        count = 0
+
+        if n < k:
+            return False
+
+        for i in s:
+            freq[ord(i) - ord("a")] += 1
+
+        for i in freq:
+            if i % 2 != 0:
+                count += 1
+                if count > k:
+                    return False
+
+        return True
